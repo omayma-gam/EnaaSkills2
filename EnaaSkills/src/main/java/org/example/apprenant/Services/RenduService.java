@@ -4,9 +4,10 @@ import org.example.apprenant.DTO.RenduDto;
 import org.example.apprenant.Entity.Rendus;
 import org.example.apprenant.Mapper.RenduMapper;
 import org.example.apprenant.Repositorie.RenduRepo;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class RenduService {
 
     private final RenduRepo renduRepo;
@@ -35,7 +36,7 @@ public class RenduService {
         }
         rendus.setDatDepot(renduDto.getDatDepot());
         rendus.setBrief(renduDto.getBrief());
-        rendus.setApprenant(renduDto.getApprenant());
+//        rendus.setApprenant(renduDto.getApprenantId());
 
         return renduMapper.entityToDto(rendus);
     }

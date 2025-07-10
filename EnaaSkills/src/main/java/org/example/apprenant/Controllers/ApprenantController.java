@@ -32,8 +32,8 @@ public class ApprenantController {
         return apprenantService.modifierApprenant(id, apprenantDto);
     }
 
-    @DeleteMapping("/{id}")
-    public void deleteApprenant(@PathVariable Long id) {
-        apprenantService.supprimerApprenant(id);
-    }
+//    @DeleteMapping("/{id}")
+//    public void deleteApprenant(@PathVariable Long id) {
+//        apprenantService.supprimerRendu(id);
+//    }
 }

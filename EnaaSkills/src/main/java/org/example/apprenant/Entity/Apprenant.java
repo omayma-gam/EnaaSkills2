@@ -14,7 +14,7 @@ public class Apprenant {
     private String prenom;
     private String email;
 
-    @OneToMany(mappedBy = "Apprenant_Id")
+    @OneToMany(mappedBy = "apprenant")
     private List<Rendus> rendus;
 
     public Long getId() {

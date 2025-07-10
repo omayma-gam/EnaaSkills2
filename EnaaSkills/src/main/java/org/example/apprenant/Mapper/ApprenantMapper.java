@@ -5,9 +5,8 @@ import org.example.apprenant.Entity.Apprenant;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
-@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE)
-
+@Mapper(componentModel = "spring")
 public interface ApprenantMapper {
-    ApprenantDto entityToDto(Apprenant competence);
-    Apprenant dtoToEntity(ApprenantDto competenceDto);
+    Apprenant dtoToEntity(ApprenantDto dto);
+    ApprenantDto entityToDto(Apprenant entity);
 }

@@ -7,11 +7,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 
-public class RenduDto implements Serializable {
+public class RenduDto   {
     Long id;
     Date datDepot;
     Brief brief;
-    Apprenant apprenant;
+    Long apprenantId;
 
     public Date getDatDepot() {
         return datDepot;
@@ -37,11 +37,11 @@ public class RenduDto implements Serializable {
         this.brief = brief;
     }
 
-    public Apprenant getApprenant() {
-        return apprenant;
+    public Long getApprenantId() {
+        return apprenantId;
     }
 
-    public void setApprenant(Apprenant apprenant) {
-        this.apprenant = apprenant;
+    public void setApprenantId(Long apprenantId) {
+        this.apprenantId = apprenantId;
     }
 }

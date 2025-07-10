@@ -1,30 +1,16 @@
-package org.example.apprenant.Entity;
+package org.example.apprenant.DTO;
 
-import jakarta.persistence.*;
+import lombok.Value;
+import org.example.apprenant.Entity.Brief;
 
+import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
-@Entity
-public class Brief {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String titre;
-
-    private String description;
-
-    private Date dateCreation;
-
-
-    @OneToMany (mappedBy = "brief")
-    private List<Rendus> rendus;
-
-
-//    @ElementCollection
-//    private List<Long> competencesIds;
+public class BriefDto  {
+    Long id;
+    String titre;
+    String description;
+    Date dateCreation;
 
     public Long getId() {
         return id;
@@ -56,13 +42,5 @@ public class Brief {
 
     public void setDateCreation(Date dateCreation) {
         this.dateCreation = dateCreation;
-    }
-
-    public List<Rendus> getRendus() {
-        return rendus;
-    }
-
-    public void setRendus(List<Rendus> rendus) {
-        this.rendus = rendus;
     }
 }

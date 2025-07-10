@@ -47,4 +47,6 @@ public class Rendus {
     public void setApprenant(Apprenant apprenant) {
         this.apprenant = apprenant;
     }
+
+
 }

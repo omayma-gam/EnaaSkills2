@@ -36,7 +36,7 @@ public class ApprenantService {
         return apprenantMapper.entityToDto(apprenant);
     }
 
-    public void supprimerApprenant(Long id){
+    public void supprimerRendu(Long id){
         apprenantRepo.deleteById(id);
     }
 

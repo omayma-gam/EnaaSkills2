@@ -15,7 +15,7 @@ public class Apprenant {
     private String email;
 
     @OneToMany(mappedBy = "Apprenant_Id")
-    private List<Rendu> rendus;
+    private List<Rendus> rendus;
 
     public Long getId() {
         return id;
@@ -49,11 +49,11 @@ public class Apprenant {
         this.email = email;
     }
 
-    public List<Rendu> getRendus() {
+    public List<Rendus> getRendus() {
         return rendus;
     }
 
-    public void setRendus(List<Rendu> rendus) {
+    public void setRendus(List<Rendus> rendus) {
         this.rendus = rendus;
     }
 }

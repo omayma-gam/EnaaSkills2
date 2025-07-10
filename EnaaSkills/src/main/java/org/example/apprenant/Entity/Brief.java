@@ -20,7 +20,7 @@ public class Brief {
 
 
     @OneToMany (mappedBy = "brief_Id")
-    private List<Rendu> rendus;
+    private List<Rendus> rendus;
 
 
 //    @ElementCollection

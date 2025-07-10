@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Apprenant</module>
-        <module>Brief-Service</module>
+        <module>EnaaSkills</module>
+        <module>Commpetence</module>
     </modules>
 
     <properties>

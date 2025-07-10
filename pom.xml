@@ -10,8 +10,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>Compétence</module>
         <module>Apprenant</module>
+        <module>Brief-Service</module>
     </modules>
 
     <properties>

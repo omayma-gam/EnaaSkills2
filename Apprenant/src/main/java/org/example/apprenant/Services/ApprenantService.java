@@ -16,16 +16,16 @@ public class ApprenantService {
         this.apprenantMapper = apprenantMapper;
     }
 
-    public ApprenantDto AjouterCompetence(ApprenantDto competenceDto){
+    public ApprenantDto AjouterApprenant(ApprenantDto competenceDto){
         Apprenant competence=apprenantMapper.dtoToEntity(competenceDto);
         Apprenant competence1=apprenantRepo.save(competence);
         return apprenantMapper.entityToDto(competence1);
     }
 
-    public List<Apprenant> ListCompetence() {
+    public List<Apprenant> ListApprenant() {
         return apprenantRepo.findAll();
     }
-    public ApprenantDto modifierCompetence(Long id ,ApprenantDto apprenantDto){
+    public ApprenantDto modifierApprenant(Long id ,ApprenantDto apprenantDto){
         Apprenant apprenant=apprenantRepo.findById(id).orElse(null);
         if (apprenant==null){
             throw new RuntimeException("Aucune Compétence");
@@ -36,7 +36,7 @@ public class ApprenantService {
         return apprenantMapper.entityToDto(apprenant);
     }
 
-    public void supprimerCompetence(Long id){
+    public void supprimerApprenant(Long id){
         apprenantRepo.deleteById(id);
     }
 

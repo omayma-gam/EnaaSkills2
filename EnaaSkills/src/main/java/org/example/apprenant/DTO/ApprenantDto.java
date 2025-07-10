@@ -1,8 +1,5 @@
 package org.example.apprenant.DTO;
 
-import lombok.Value;
-import org.example.apprenant.Entity.Apprenant;
-
 import java.io.Serializable;
 
 public class ApprenantDto implements Serializable {

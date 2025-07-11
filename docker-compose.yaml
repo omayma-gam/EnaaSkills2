@@ -7,13 +7,20 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: competencedb
-      MYSQL_USER: root
-      MYSQL_PASSWORD: your_password_here
-      MYSQL_ROOT_PASSWORD: your_password_here
+      MYSQL_USER: app_user
+      MYSQL_PASSWORD: app_pass
+      MYSQL_ROOT_PASSWORD: root_pass
     ports:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+    networks:
+      - microservices-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -22,26 +29,47 @@ services:
     environment:
       PMA_HOST: mysql
       PMA_USER: root
-      PMA_PASSWORD: your_password_here
+      PMA_PASSWORD: root_pass
     ports:
-      - "8082:80"
+      - "8083:80"
+    networks:
+      - microservices-network
 
   competence-service:
-    image: competence-service:latest
+    build: ./Commpetence
     container_name: competence-service
-    depends_on:
-      - mysql
     ports:
       - "8081:8081"
+    depends_on:
+      - mysql
     environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/competencedb?useSSL=false&serverTimezone=UTC
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: your_password_here
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
-      SPRING_JPA_SHOW_SQL: "true"
-      SPRING_APPLICATION_NAME: competence-service
-      SPRINGDOC_API_DOCS_PATH: /v3/api-docs
-      SPRINGDOC_SWAGGER_UI_PATH: /swagger-ui.html
+      - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/competencedb?useSSL=false&serverTimezone=UTC
+      - SPRING_DATASOURCE_USERNAME=app_user
+      - SPRING_DATASOURCE_PASSWORD=app_pass
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_SHOW_SQL=true
+      - SPRING_APPLICATION_NAME=competence-service
+      - SPRINGDOC_API_DOCS_PATH=/v3/api-docs
+      - SPRINGDOC_SWAGGER_UI_PATH=/swagger-ui.html
+    networks:
+      - microservices-network
+
+  rendu-service:
+    build: ./EnaaSkills
+    container_name: rendu-service
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      - competence-service
+    networks:
+      - microservices-network
 
 volumes:
   mysql_data:
+
+networks:
+  microservices-network:
+    driver: bridge

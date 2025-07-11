@@ -1,34 +1,37 @@
 package org.example.apprenant.Controllers;
 
-import org.example.apprenant.DTO.BriefDto;
-import org.example.apprenant.Services.BriefService;
-import org.springframework.web.bind.annotation.*;
 
+import org.example.apprenant.Entity.Brief;
+import org.example.apprenant.Services.BriefService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/brief")
+@RequestMapping("/briefs")
 public class BriefController {
-    private final BriefService briefService;
 
-    public BriefController(BriefService briefService) {
-        this.briefService = briefService;
-    }
-    @PostMapping
-    private BriefDto Add(@RequestBody BriefDto dto){
-        return briefService.creerBrief(dto);
-    }
+    @Autowired
+    private BriefService briefService;
 
     @GetMapping
-    private List<BriefDto> get(){
-        return  briefService.List();
+    public List<Brief> getAllBriefs() {
+        return briefService.getAllBriefs();
     }
-    @PutMapping("{id}")
-    private BriefDto udate(@PathVariable Long id,@RequestBody BriefDto briefDto){
-        return briefService.ModifierBrief(id,briefDto);
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Brief> getBriefById(@PathVariable Long id) {
+        Optional<Brief> brief = briefService.getBriefById(id);
+        if (brief.isPresent()) {
+            return ResponseEntity.ok(brief.get());
+        }
+        return ResponseEntity.notFound().build();
     }
-    @DeleteMapping("{id}")
-    private void Dlete(@PathVariable Long id){
-        briefService.SupprimerBrief(id);
+
+    @PostMapping
+    public Brief createBrief(@RequestBody Brief brief) {
+        return briefService.saveBrief(brief);
     }
 }

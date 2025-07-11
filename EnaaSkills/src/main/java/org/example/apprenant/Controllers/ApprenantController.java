@@ -1,39 +1,37 @@
 package org.example.apprenant.Controllers;
 
-import org.example.apprenant.DTO.ApprenantDto;
+
 import org.example.apprenant.Entity.Apprenant;
 import org.example.apprenant.Services.ApprenantService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+import java.util.Optional;
 
 @RestController
-@RequestMapping("/apprenant")
+@RequestMapping("/apprenants")
 public class ApprenantController {
 
-    private final ApprenantService apprenantService;
+    @Autowired
+    private ApprenantService apprenantService;
 
-    public ApprenantController(ApprenantService apprenantService) {
-        this.apprenantService = apprenantService;
+    @GetMapping
+    public List<Apprenant> getAllApprenants() {
+        return apprenantService.getAllApprenants();
     }
 
-    @PostMapping("/add")
-    public ApprenantDto addApprenant(@RequestBody ApprenantDto apprenantDto) {
-        return apprenantService.AjouterApprenant(apprenantDto);
+    @GetMapping("/{id}")
+    public ResponseEntity<Apprenant> getApprenantById(@PathVariable Long id) {
+        Optional<Apprenant> apprenant = apprenantService.getApprenantById(id);
+        if (apprenant.isPresent()) {
+            return ResponseEntity.ok(apprenant.get());
+        }
+        return ResponseEntity.notFound().build();
     }
 
-    @GetMapping("/list")
-    public List<Apprenant> getAll() {
-        return apprenantService.ListApprenant();
+    @PostMapping
+    public Apprenant createApprenant(@RequestBody Apprenant apprenant) {
+        return apprenantService.saveApprenant(apprenant);
     }
-
-    @PutMapping("/update/{id}")
-    public ApprenantDto updateApprenant(@PathVariable Long id, @RequestBody ApprenantDto apprenantDto) {
-        return apprenantService.modifierApprenant(id, apprenantDto);
-    }
-
-//    @DeleteMapping("/{id}")
-//    public void deleteApprenant(@PathVariable Long id) {
-//        apprenantService.supprimerRendu(id);
-//    }
 }

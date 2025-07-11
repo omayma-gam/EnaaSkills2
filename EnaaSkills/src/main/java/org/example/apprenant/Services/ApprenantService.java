@@ -1,43 +1,27 @@
 package org.example.apprenant.Services;
 
-import org.example.apprenant.DTO.ApprenantDto;
 import org.example.apprenant.Entity.Apprenant;
-import org.example.apprenant.Repositorie.ApprenantRepo;
+import org.example.apprenant.Repositorie.ApprenantRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class ApprenantService {
-    private final ApprenantRepo apprenantRepo;
-    private ApprenantMapper apprenantMapper;
 
-    public ApprenantService(ApprenantRepo apprenantRepo, ApprenantMapper apprenantMapper) {
-        this.apprenantRepo = apprenantRepo;
-        this.apprenantMapper = apprenantMapper;
+    @Autowired
+    private ApprenantRepository apprenantRepository;
+
+    public List<Apprenant> getAllApprenants() {
+        return apprenantRepository.findAll();
     }
 
-    public ApprenantDto AjouterApprenant(ApprenantDto competenceDto){
-        Apprenant competence=apprenantMapper.dtoToEntity(competenceDto);
-        Apprenant competence1=apprenantRepo.save(competence);
-        return apprenantMapper.entityToDto(competence1);
+    public Optional<Apprenant> getApprenantById(Long id) {
+        return apprenantRepository.findById(id);
     }
 
-    public List<Apprenant> ListApprenant() {
-        return apprenantRepo.findAll();
+    public Apprenant saveApprenant(Apprenant apprenant) {
+        return apprenantRepository.save(apprenant);
     }
-    public ApprenantDto modifierApprenant(Long id ,ApprenantDto apprenantDto){
-        Apprenant apprenant=apprenantRepo.findById(id).orElse(null);
-        if (apprenant==null){
-            throw new RuntimeException("Aucune Compétence");
-        }
-        apprenant.setNom(apprenantDto.getNom());
-        apprenant.setPrenom(apprenantDto.getPrenom());
-        apprenant.setEmail(apprenantDto.getEmail());
-        return apprenantMapper.entityToDto(apprenant);
-    }
-
-    public void supprimerRendu(Long id){
-        apprenantRepo.deleteById(id);
-    }
-
 }

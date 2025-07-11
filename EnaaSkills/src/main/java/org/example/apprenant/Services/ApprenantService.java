@@ -2,7 +2,6 @@ package org.example.apprenant.Services;
 
 import org.example.apprenant.DTO.ApprenantDto;
 import org.example.apprenant.Entity.Apprenant;
-import org.example.apprenant.Mapper.ApprenantMapper;
 import org.example.apprenant.Repositorie.ApprenantRepo;
 import org.springframework.stereotype.Service;
 

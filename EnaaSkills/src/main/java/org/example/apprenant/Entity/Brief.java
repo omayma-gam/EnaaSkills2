@@ -23,8 +23,16 @@ public class Brief {
     private List<Rendus> rendus;
 
 
-//    @ElementCollection
-//    private List<Long> competencesIds;
+    public List<Long> getCompetencesIds() {
+        return competencesIds;
+    }
+
+    public void setCompetencesIds(List<Long> competencesIds) {
+        this.competencesIds = competencesIds;
+    }
+
+    //    @ElementCollection
+    private List<Long> competencesIds;
 
     public Long getId() {
         return id;

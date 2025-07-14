@@ -5,8 +5,7 @@ import org.example.commpetence.Models.Competence;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
-@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE)
-
+@Mapper(componentModel = "spring")
 public interface CompetenceMapper {
 
     CompetenceDto competenceToDto(Competence competence);

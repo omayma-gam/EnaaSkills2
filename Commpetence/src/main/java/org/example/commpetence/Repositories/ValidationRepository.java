@@ -9,6 +9,9 @@ import java.util.List;
 @Repository
 public interface ValidationRepository extends JpaRepository<Validation, Long> {
     List<Validation> findByApprenantId(Long apprenantId);
+
     List<Validation> findByCompetenceId(Long competenceId);
+
     List<Validation> findByBriefId(Long briefId);
+
 }

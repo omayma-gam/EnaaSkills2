@@ -9,5 +9,9 @@ import java.util.List;
 
 @Repository
 public interface BriefCompetenceRepository extends JpaRepository<BriefCompetence, Long> {
+    List<BriefCompetence> findByBriefId(Long briefId);
+
+    List<BriefCompetence> findByCompetenceId(Long competenceId);
+
 
 }

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/Sous_CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/Sous_CompetenceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/ApprenantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/ApprenantController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/BriefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/BriefController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/auth-service/src/main/java/com/example/authservice",
+    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/Commpetence/src/main/java/org/example/commpetence",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +77,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\Commpetence\src\main\java\org\example\commpetence" />
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\EnaaSkills\src\main\java\org\example\apprenant" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service\src\main\java\com\example\authservice" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\common" />
@@ -175,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752830598032</updated>
       <workItem from="1752830599706" duration="1087000" />
-      <workItem from="1752847445178" duration="6273000" />
+      <workItem from="1752847445178" duration="6791000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,7 @@
 package org.example.apprenant.config;
 
 
-import com.example.resourceservice.config.JwtUtil;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

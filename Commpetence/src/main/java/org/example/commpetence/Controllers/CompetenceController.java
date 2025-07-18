@@ -4,7 +4,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import org.example.commpetence.DTO.CompetenceDto;
 import org.example.commpetence.Models.Competence;
 import org.example.commpetence.Services.CompetenceService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -19,31 +19,36 @@ public class CompetenceController {
 
     private final CompetenceService competenceService;
 
-
     public CompetenceController(CompetenceService competenceService) {
         this.competenceService = competenceService;
     }
 
     @PostMapping("/add")
+    @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR')")
     public CompetenceDto AddCompetence(@RequestBody CompetenceDto competenceDto){
         return competenceService.AjouterCompetence(competenceDto);
     }
 
     @GetMapping("/List")
+    @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR', 'APPRENANT')")
     public List<Competence> getAll(){
         return competenceService.ListCompetence();
     }
 
     @PutMapping("/updat/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR')")
     public CompetenceDto updatCompetence(@PathVariable Long id , @RequestBody CompetenceDto competenceDto){
         return competenceService.modifierCompetence(id,competenceDto);
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR')")
     public void delete(@PathVariable Long id){
         competenceService.supprimerCompetence(id);
     }
+
     @GetMapping("/export/excel")
+    @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR')")
     public void exportToExcel(HttpServletResponse response) throws IOException {
         // 1. Définir le type de contenu de la réponse
         response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
@@ -57,6 +62,7 @@ public class CompetenceController {
 
         // 3. Récupérer les données à exporter
         List<Competence> competences = competenceService.ListCompetence();
+
 
     }
 

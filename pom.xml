@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>Eureka</module>
         <module>EnaaSkills</module>
         <module>Commpetence</module>
     </modules>

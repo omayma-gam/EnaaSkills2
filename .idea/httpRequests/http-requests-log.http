@@ -1,0 +1,35 @@
+POST http://localhost:8081/api/auth/login
+Content-Type: application/json
+Content-Length: 59
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "oumaima@gmail.com",
+  "password": "oumaima"
+}
+
+<> 2025-07-18T175038.200.json
+
+###
+
+POST http://localhost:8081/api/auth/register
+Content-Type: application/json
+Content-Length: 130
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.1.1.1
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "oumaima@gmail.com",
+  "password": "oumaima",
+  "firstName": "pass",
+  "lastName": "oumaima",
+  "role": "APPRENANT"
+}
+
+<> 2025-07-18T174950.200.json
+
+###
+

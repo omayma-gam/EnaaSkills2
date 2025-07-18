@@ -5,39 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/AuthResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/service/CustomUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/ResourceServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/controller/ResourceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/entity/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/repository/ResourceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/service/ResourceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commpetence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnaaSkills/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/ApprenantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/ApprenantApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resource-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +39,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.generated-requests | #44.executor": "Run",
+    "HTTP Request.generated-requests | #45.executor": "Run",
+    "HTTP Request.generated-requests | #48.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -107,6 +85,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.resourceservice.config" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -118,7 +99,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApprenantApplication">
+  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+    <configuration name="generated-requests | #44" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#44" index="44" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #45" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#45" index="45" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #48" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#48" index="48" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ApprenantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="EnaaSkills" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apprenant.ApprenantApplication" />
@@ -161,6 +151,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #45" />
+        <item itemvalue="HTTP Request.generated-requests | #44" />
+        <item itemvalue="HTTP Request.generated-requests | #48" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -178,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752830598032</updated>
       <workItem from="1752830599706" duration="1087000" />
-      <workItem from="1752847445178" duration="5197000" />
+      <workItem from="1752847445178" duration="6273000" />
     </task>
     <servers />
   </component>

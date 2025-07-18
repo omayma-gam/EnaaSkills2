@@ -1,0 +1,7 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQVBQUkVOQU5UIiwic3ViIjoib3VtYWltYUBnbWFpbC5jb20iLCJpYXQiOjE3NTI4NTM3OTAsImV4cCI6MTc1Mjk0MDE5MH0._hRV3dt6i5sH3cRalY9rPL9G1Y9htZRlviTV0VJzVdo",
+  "type": "Bearer",
+  "email": "oumaima@gmail.com",
+  "role": "APPRENANT",
+  "expiresAt": "2025-07-19T17:49:50"
+}

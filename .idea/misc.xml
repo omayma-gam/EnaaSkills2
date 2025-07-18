@@ -9,7 +9,17 @@
         <option value="$USER_HOME$/Downloads/Compétence/Compétence/pom.xml" />
         <option value="$PROJECT_DIR$/Commpetence/pom.xml" />
         <option value="$PROJECT_DIR$/Eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/common/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$USER_HOME$/Pictures/securitysharedkey/common/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/common/common/pom.xml" />
+        <option value="$PROJECT_DIR$/common/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">

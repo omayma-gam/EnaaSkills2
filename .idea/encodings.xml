@@ -6,6 +6,12 @@
     <file url="file://$PROJECT_DIR$/Compétence/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/EnaaSkills/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resource-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resource-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

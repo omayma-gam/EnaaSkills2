@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/AuthServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/enums/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/ResourceServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/controller/ResourceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/entity/Resource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/repository/ResourceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/service/ResourceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/ApprenantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/ApprenantApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="302fTifIV9A9KQAIHI68tWjasCu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ChatTagsLlmMigration": "true",
+    "RunOnceActivity.ClientConfigCleanupMigration": "true",
+    "RunOnceActivity.CodyAccountHistoryMigration": "true",
+    "RunOnceActivity.CodyAccountsIdsRefresh": "true",
+    "RunOnceActivity.CodyAssignOrphanedChatsToActiveAccount": "true",
+    "RunOnceActivity.CodyConvertUrlToCodebaseName": "true",
+    "RunOnceActivity.CodyHistoryLlmMigration": "true",
+    "RunOnceActivity.CodyMigrateChatHistory-v2": "true",
+    "RunOnceActivity.CodyProjectSettingsMigration": "true",
+    "RunOnceActivity.DeprecatedChatLlmMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApprenantApplication.executor": "Run",
+    "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.EurekaApplication.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/auth-service/src/main/java/com/example/authservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "show.migrate.to.gradle.popup": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service\src\main\java\com\example\authservice" />
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApprenantApplication">
+    <configuration name="ApprenantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EnaaSkills" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apprenant.ApprenantApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="common (1) (com.app)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.common.CommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommpetenceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Commpetence" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.commpetence.CommpetenceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Eureka" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ma.enaa.eureka.EurekaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResourceServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="resource-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.resourceservice.ResourceServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="" />
+      <created>1752830598032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752830598032</updated>
+      <workItem from="1752830599706" duration="1087000" />
+      <workItem from="1752847445178" duration="5197000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

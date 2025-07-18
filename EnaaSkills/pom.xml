@@ -69,6 +69,11 @@
             <scope>provided</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!-- MySQL Connector -->
         <dependency>
             <groupId>com.mysql</groupId>
@@ -116,4 +121,17 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2023.0.1</version> <!-- or latest version -->
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/Sous_CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/Sous_CompetenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/ApprenantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/ApprenantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/BriefController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/BriefController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +62,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ApprenantApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
+    "Spring Boot.CommpetenceApplication.executor": "Run",
     "Spring Boot.EurekaApplication.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/Commpetence/src/main/java/org/example/commpetence",
+    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/auth-service",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,11 +83,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\Commpetence\src\main\java\org\example\commpetence" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\EnaaSkills\src\main\java\org\example\apprenant" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service\src\main\java\com\example\authservice" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
-      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
@@ -100,7 +106,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AuthServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CommpetenceApplication">
     <configuration name="generated-requests | #44" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#44" index="44" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -110,9 +116,9 @@
     <configuration name="generated-requests | #48" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#48" index="48" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="ApprenantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="EnaaSkills" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apprenant.ApprenantApplication" />
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.apigateway.ApiGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1752830598032</updated>
       <workItem from="1752830599706" duration="1087000" />
-      <workItem from="1752847445178" duration="6791000" />
+      <workItem from="1752847445178" duration="8102000" />
     </task>
     <servers />
   </component>

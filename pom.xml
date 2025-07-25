@@ -22,7 +22,7 @@
         <module>EnaaSkills</module>
         <module>Commpetence</module>
         <module>auth-service</module>
-        <module>api-gateway</module>
+<!--        <module>api-gateway</module>-->
     </modules>
 
     <properties>

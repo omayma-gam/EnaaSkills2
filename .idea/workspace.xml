@@ -5,46 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/DataSeeder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jenkinsFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/DTO/ApprenantDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/DTO/ApprenantDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Models/Competence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Models/Competence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/BriefRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/BriefRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/RenduRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/RenduRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Services/RenduService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Services/RenduService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/ResourceServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/controller/ResourceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/entity/Resource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/repository/ResourceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/service/ResourceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +214,7 @@
       <workItem from="1753174939078" duration="4570000" />
       <workItem from="1753180185067" duration="5773000" />
       <workItem from="1753220256010" duration="2732000" />
-      <workItem from="1753434998430" duration="10068000" />
+      <workItem from="1753434998430" duration="10708000" />
     </task>
     <servers />
   </component>

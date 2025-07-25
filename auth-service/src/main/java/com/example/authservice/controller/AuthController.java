@@ -37,6 +37,12 @@ public class AuthController {
             return ResponseEntity.badRequest().build();
         }
     }
+
+
+    @GetMapping("/test")
+    public String  testApp() {
+         return "it s work";
+    }
     
     @GetMapping("/health")
     public ResponseEntity<String> health() {

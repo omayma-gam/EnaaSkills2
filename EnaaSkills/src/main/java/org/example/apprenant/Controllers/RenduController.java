@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/rendus")
 public class RenduController {
 
-    @Autowired
-    private RenduService renduService;
+
+    private final RenduService renduService;
+
+    public RenduController(RenduService renduService) {
+        this.renduService = renduService;
+    }
 
     @PostMapping
     @PreAuthorize("hasRole('APPRENANT')")

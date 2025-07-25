@@ -47,20 +47,21 @@ public class CompetenceController {
         competenceService.supprimerCompetence(id);
     }
 
+
     @GetMapping("/export/excel")
     @PreAuthorize("hasAnyRole('ADMIN', 'FORMATEUR')")
     public void exportToExcel(HttpServletResponse response) throws IOException {
-        // 1. Définir le type de contenu de la réponse
+
         response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 
-        // 2. Créer un nom de fichier dynamique
+
         DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
         String currentDateTime = dateFormatter.format(new Date());
         String headerKey = "Content-Disposition";
         String headerValue = "attachment; filename=rapportcompetences" + currentDateTime + ".xlsx";
         response.setHeader(headerKey, headerValue);
 
-        // 3. Récupérer les données à exporter
+
         List<Competence> competences = competenceService.ListCompetence();
 
 

@@ -9,8 +9,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class RenduService {
 
-    @Autowired
-    private RenduRepository renduRepository;
+
+    private final RenduRepository renduRepository;
+
+    public RenduService(RenduRepository renduRepository) {
+        this.renduRepository = renduRepository;
+    }
 
     public Rendu saveRendu(Rendu rendu) {
         return renduRepository.save(rendu);

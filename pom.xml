@@ -22,7 +22,6 @@
         <module>EnaaSkills</module>
         <module>Commpetence</module>
         <module>auth-service</module>
-        <module>resource-service</module>
         <module>api-gateway</module>
     </modules>
 

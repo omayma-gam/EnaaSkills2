@@ -5,22 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef69b176-17b9-4988-be4a-5ffa723f937f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/DataSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jenkinsFile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/CommpetenceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Controllers/CompetenceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/DTO/ApprenantDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/DTO/ApprenantDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Models/Competence.java" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/java/org/example/commpetence/Models/Competence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Commpetence/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Controllers/RenduController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/BriefRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/BriefRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/RenduRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Repositorie/RenduRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Services/RenduService.java" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/java/org/example/apprenant/Services/RenduService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/EnaaSkills/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/java/com/example/authservice/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/ResourceServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/controller/ResourceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/entity/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/repository/ResourceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/java/com/example/resourceservice/service/ResourceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource-service/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,9 +78,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "HTTP Request.generated-requests | #42.executor": "Run",
     "HTTP Request.generated-requests | #44.executor": "Run",
     "HTTP Request.generated-requests | #45.executor": "Run",
     "HTTP Request.generated-requests | #48.executor": "Run",
+    "HTTP Request.generated-requests | #51.executor": "Run",
+    "Maven.EnaaSkiils2 [clean,install,package].executor": "Run",
+    "Maven.EnaaSkiils2 [clean,package,-DskipTests].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "Database connection parameters found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -62,20 +105,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.ToggleCodyToolWindowAfterMigration": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ApprenantApplication.executor": "Run",
     "Spring Boot.AuthServiceApplication.executor": "Run",
     "Spring Boot.CommpetenceApplication.executor": "Run",
     "Spring Boot.EurekaApplication.executor": "Run",
+    "Spring Boot.ResourceServiceApplication.executor": "Run",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/auth-service",
+    "last_opened_file_path": "C:/Users/Med/IdeaProjects/EnaaSkillsx/api-gateway/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "show.migrate.to.gradle.popup": "false",
     "vue.rearranger.settings.migration": "true"
@@ -83,11 +131,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\api-gateway\src\main\resources" />
+      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service\src\main\resources" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\Commpetence\src\main\java\org\example\commpetence" />
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\EnaaSkills\src\main\java\org\example\apprenant" />
-      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx\auth-service\src\main\java\com\example\authservice" />
-      <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Med\IdeaProjects\EnaaSkillsx" />
@@ -95,6 +143,12 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.resourceservice.config" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install package" />
+      <command value="mvn clean package -DskipTests" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -106,7 +160,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommpetenceApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+    <configuration name="generated-requests | #42" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#42" index="42" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="generated-requests | #44" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#44" index="44" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -116,6 +173,9 @@
     <configuration name="generated-requests | #48" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#48" index="48" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #51" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#51" index="51" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.apigateway.ApiGatewayApplication" />
@@ -123,16 +183,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="auth-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthServiceApplication" />
+    <configuration name="ApprenantApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="EnaaSkills" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apprenant.ApprenantApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="common (1) (com.app)" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.common.CommonApplication" />
+    <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="auth-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,8 +220,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #45" />
+        <item itemvalue="HTTP Request.generated-requests | #51" />
+        <item itemvalue="HTTP Request.generated-requests | #42" />
         <item itemvalue="HTTP Request.generated-requests | #44" />
+        <item itemvalue="HTTP Request.generated-requests | #45" />
         <item itemvalue="HTTP Request.generated-requests | #48" />
       </list>
     </recent_temporary>
@@ -182,7 +244,16 @@
       <option name="presentableId" value="Default" />
       <updated>1752830598032</updated>
       <workItem from="1752830599706" duration="1087000" />
-      <workItem from="1752847445178" duration="8102000" />
+      <workItem from="1752847445178" duration="8295000" />
+      <workItem from="1752878697920" duration="2772000" />
+      <workItem from="1752949417750" duration="42000" />
+      <workItem from="1752952163982" duration="699000" />
+      <workItem from="1752968792981" duration="1420000" />
+      <workItem from="1753010893427" duration="14000" />
+      <workItem from="1753174939078" duration="4570000" />
+      <workItem from="1753180185067" duration="5773000" />
+      <workItem from="1753220256010" duration="2732000" />
+      <workItem from="1753434998430" duration="10068000" />
     </task>
     <servers />
   </component>

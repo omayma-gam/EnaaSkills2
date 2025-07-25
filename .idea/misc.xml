@@ -20,6 +20,7 @@
       <set>
         <option value="$PROJECT_DIR$/common/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
+        <option value="$PROJECT_DIR$/resource-service/pom.xml" />
       </set>
     </option>
   </component>

@@ -1,83 +1,141 @@
 version: '3.8'
 
 services:
+
+  # === MYSQL DATABASE ===
   mysql:
     image: mysql:8.0
-    container_name: mysql-competence
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: competencedb
     ports:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
-      - microservices-network
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+      - micro-net
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin-competence
-    restart: always
-    environment:
-      PMA_HOST: mysql
-      PMA_USER: root
-      PMA_PASSWORD: root
+  # === EUREKA SERVER ===
+  eureka-server:
+    build:
+      context: ./Eureka
+    container_name: eureka
     ports:
-      - "8083:80"
+      - "8761:8761"
     networks:
-      - microservices-network
+      - micro-net
 
-  competence-service:
-    build: ./Commpetence
+  # === API GATEWAY ===
+#  api-gateway:
+#    build:
+#      context: ./api-gateway
+#    container_name: api-gateway
+#    ports:
+#      - "8085:8085"
+#    depends_on:
+#      - eureka-server
+#    networks:
+#      - micro-net
+
+  # === AUTH SERVICE ===
+  auth-service:
+    build:
+      context: ./auth-service
+    container_name: auth-service
+    ports:
+      - "8084:8084"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/competencedb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
+    depends_on:
+      - mysql
+      - eureka-server
+    networks:
+      - micro-net
+
+  # === COMPETENCE SERVICE ===
+  competence1-service:
+    build:
+      context: ./commpetence
     container_name: competence-service
     ports:
       - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/competencedb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
     depends_on:
       - mysql
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      - SERVER_PORT=8081
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/competencedb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-      - SPRING_DATASOURCE_DRIVER-CLASS-NAME=com.mysql.cj.jdbc.Driver
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=root
-      - SPRING_JPA_DATABASE-PLATFORM=org.hibernate.dialect.MySQL8Dialect
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-      - SPRING_JPA_SHOW_SQL=true
-      - SPRING_APPLICATION_NAME=competence-service
+      - eureka-server
     networks:
-      - microservices-network
+      - micro-net
 
-  rendu-service:
-    build: ./EnaaSkills
+  # === RENDU SERVICE (EnaaSkills) ===
+  rendu1-service:
+    build:
+      context: ./EnaaSkills
     container_name: rendu-service
     ports:
       - "8082:8082"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/rendudb?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:8761/eureka/
     depends_on:
       - mysql
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-      - SERVER_PORT=8082
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/competencedb?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
-      - SPRING_DATASOURCE_DRIVER-CLASS-NAME=com.mysql.cj.jdbc.Driver
-      - SPRING_DATASOURCE_USERNAME=root
-      - SPRING_DATASOURCE_PASSWORD=root
-      - SPRING_JPA_DATABASE-PLATFORM=org.hibernate.dialect.MySQL8Dialect
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-      - SPRING_JPA_SHOW_SQL=true
-      - SPRING_APPLICATION_NAME=rendu-service
+      - eureka-server
     networks:
-      - microservices-network
+      - micro-net
+
+  # === JENKINS ===
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_data:/var/jenkins_home
+    networks:
+      - micro-net
+
+  # === SONARQUBE ===
+  sonarqube:
+    image: sonarqube:latest
+    container_name: sonarqube
+    ports:
+      - "9000:9000"
+    environment:
+      - SONAR_JDBC_URL=jdbc:postgresql://sonar-db:5432/sonar
+      - SONAR_JDBC_USERNAME=sonar
+      - SONAR_JDBC_PASSWORD=sonar
+    depends_on:
+      - sonar-db
+    networks:
+      - micro-net
+
+  # === SONAR DB ===
+  sonar-db:
+    image: postgres:13
+    container_name: sonar-db
+    environment:
+      - POSTGRES_USER=sonar
+      - POSTGRES_PASSWORD=sonar
+      - POSTGRES_DB=sonar
+    volumes:
+      - sonar_db_data:/var/lib/postgresql/data
+    networks:
+      - micro-net
+
+networks:
+  micro-net:
 
 volumes:
   mysql_data:
-
-networks:
-  microservices-network:
-    driver: bridge
+  jenkins_data:
+  sonar_db_data:

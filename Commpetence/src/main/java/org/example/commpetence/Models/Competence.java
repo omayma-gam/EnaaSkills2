@@ -18,7 +18,7 @@ public class Competence {
     private boolean etatValidation;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "competence")
+    @OneToMany(mappedBy = "competence", cascade = CascadeType.REMOVE, orphanRemoval = true)
     private List<Sous_Competence> sousCompetences;
 
 

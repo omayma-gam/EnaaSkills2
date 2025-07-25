@@ -8,7 +8,7 @@ public class ApprenantDTO {
     private String prenom;
     private String email;
 
-    // Constructeurs
+
     public ApprenantDTO() {}
 
     public ApprenantDTO(Long id, String nom, String prenom, String email) {

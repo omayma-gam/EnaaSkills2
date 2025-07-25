@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY target/*.jar enna.jar
 
 EXPOSE 8082
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "enna.jar"]

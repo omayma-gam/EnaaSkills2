@@ -10,6 +10,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @Repository
 public interface RenduRepository extends JpaRepository<Rendu, Long> {
-    @Query(value = "SELECT count(R) FROM Rendu R WHERE Apprenant.id=:id")
-     int getnumberOfRendu(@PathVariable int id);
+
 }
